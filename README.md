@@ -1,3 +1,6 @@
-A home page for Rob Cobb
+A Repo For Rob Cobb
 
-This repo is for managing my github.io user pages - I'm trying to figure out how those work!
+This is where my things live! 
+
+Right now, it's mostly the code for a couple tutorials. Check out the other repos for other projects I have worked on - some of them are incomplete, but that's okay!
+

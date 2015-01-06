@@ -16,13 +16,28 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
  
-    <!-- Link the main.css stylesheet -->
-    <link href="css/main.css" rel="stylesheet">
+<!-- Hover Effects for tiles-->
+    <link href="css/hover-min.css" rel="stylesheet">
     
     <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
     <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
  
+
+    <!-- OPTIONAL: Fork me on Github Ribbon -->
+    <!--link rel="stylesheet" href="gh-fork-ribbon.css" -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="gh-fork-ribbon.ie.css">
+    <![endif]-->
+
+      <!-- Link the main.css stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -30,17 +45,57 @@
     <![endif]-->
 
  </head>
- <body>
+ <body id="page-top" class="index">
  
- 
- 
+ <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#resume">Education</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
    <div class="header" id="headerwrap">
      <div class="container">
+      <div class="github-fork-ribbon-wrapper right">
+              <div class="github-fork-ribbon">
+                  <a href="https://github.com/rrcobb/resume">Fork me on GitHub</a>
+              </div>
+          </div>
+
        <div class="row centered">
          <div class="col-lg-12">
-           <h1>GitHub Version</h1>
-           <h3>Education/Technology/Innovation <br /> 
-            <a href="mailto:hello@robcobb.me">hello@robcobb.me</a>
+           <h1>Rob Cobb</h1>
+           <h3>Education/Technology/Innovation <br /> <br />
+            
+           <a class="grow-rotate" href="mailto:hello@robcobb.me">hello@robcobb.me</a>
            </h3>
          </div><!--/.col-lg-12-->
        </div><!--/.row-->
@@ -58,7 +113,7 @@
 <p>Learning is best through projects. I want to change education so more kids can do their own thing.</p>
 </div>
        <div class="col-lg-3">
-         <p><a href="Rob Cobb Resume.pdf"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
+         <p><a href="Rob Cobb Resume.pdf"><i class="icon-file"></i><sm>DOWNLOAD RESUME PDF</sm></a></p>
        </div>
  
      </div><!--/.row-->
@@ -81,11 +136,24 @@
           </p>
         </div>
         <div class="col-lg-3">
-          <p><sm>Expected December 2014</sm><br/>
-          <imp><sm>IN PROGRESS</sm></imp>
+          <p><sm>December 2014</sm><br/>
           </p>
         </div>
-  
+        
+
+        <!-- EDIT: education line 1 -->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><t>Capstone Project</t><br/>
+            An Evaluation Tool For Computer Science Education Resources
+            <!--<br/><i>Extra info here</i>-->
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm><a href="/Capstone/An_Evaluation_Tool.pdf"><i class="icon-file"></i><sm> Capstone Project PDF</sm></a></sm><br/>
+          </p>
+        </div>
+
+
     </div><!--/.row -->
     <hr>
   </div><!--/.container -->
@@ -97,36 +165,83 @@
         <div class="col-lg-2 col-lg-offset-1">
           <h5>EXPERIENCE</h5>
         </div>
-        <!-- EDIT: work line 1 -->
+        
         <div class="col-lg-6">
-          <p class="tight"><t>Founder/Developer</t><br/>
-            Knommon<br/>
+          <p class="tight"><t>Founder/Facilitator</t><br/>
+            <a href="http://makesomething.cool">Winter Term Workshop (Upcoming)</a><br/>
           </p>
-          <p><more>Knommon is all about making education more real for the ones learning. We are incubating in UMD's <a href="http://startupshell.org/">Startup Shell.</a></more></p>
+          <p><more>Three weeks full-time helping college students work on self-started technology projects. </more></p>
         </div>
         <div class="col-lg-3">
-          <p><sm>March 2014 - CURRENT <br />
-          College Park, MD, USA</sm></p>
+          <p><sm> Jan 2015<br />
+          College Park, MD</sm></p>
         </div>
-        
-        <!-- EDIT: work line 2-->
+
+        <!-- EDIT: work line 1 -->
         <div class="col-lg-6 col-lg-offset-3">
           <p class="tight"><t>Technology Director</t><br/>
-            TIC Summer Camp<br/>
+            <a href="http://www.ticcamp.com">TIC Summer Camp</a><br/>
           </p>
           <p><more>I had a blast helping counselors and campers learn together through technology projects. I was a counselor for a summer, tech director for three.</more></p>
         </div>
         <div class="col-lg-3">
-          <p><sm> June 2011 - August 2014<br />
+          <p><sm> Summers 2011, 2012, 2013, 2014<br />
           Washington, D.C</sm></p>
         </div>
+        
+        <!-- EDIT: work line 2-->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p class="tight"><t>Developer</t><br/>
+            <a href="http://knommon.com">Knommon.com</a><br/>
+          </p>
+          <p><more>Knommon is website for connecting people to education projects.</a></more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>March 2014 <br />
+          College Park, MD</sm></p>
+        </div>
+        
     </div><!--/.row -->
     <br>
     <hr>
   </div><!--/.container -->
  
  
-  <!-- AWARDS SECTION -->
+  
+  <!-- Other Stuff about me SECTION -->
+  <div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>OTHER STUFF</h5>
+        </div>
+ 
+        <div class="col-lg-6">
+          <p><t>Academic Programs</t><br/>
+            <a href="http://startupshell.org/">Startup Shell - Student-run Startup Incubator</a><br/>
+            <a href="http://www.rhsmith.umd.edu/programs/undergraduate-programs/academics/fellows-special-programs/quest">QUEST - Quality Enhancement Systems and Teams</a><br/>
+            <a href="http://www.eip.umd.edu/">EIP - Entrepreneurship and Innovation Program</a><br/>
+          </p>
+          
+          <p><t>Volunteer Organizations</t><br/>
+            <a href="http://www.umdhelpcenter.org/">Help Center - UMD Peer Counseling and Crisis Intervention Hotline)</a><br/>
+            <a href="http://www.hoby.org/">HOBY - Hugh O'Brien Youth Leadership</a> <br/>
+            <a href="http://dg.samfundet.no/">Diversegjengen - NTNU Studentersamfundet</a><br/>
+          </p>
+            
+          <p><t>Where I'm writing</t><br/>
+            <a href="https://medium.com/@robcobbable"><img class="grow" src="./images/medium-logo-150x1501.png" height="150" width="150" alt="Medium Logo"></a>
+            <a href="http://www.diamondbackonline.com/"><img class="grow" src="./images/dbk-logo.png" height="150" width="150" alt="Diamondback Logo"></a>
+            <a href="http://keeponlearninglearning.wordpress.com/"><img class="grow" src="./images/wordpress-logo.jpeg" height="150" width="150" alt="Medium Logo"></a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    
+    </div><!--/.row -->
+    <br>
+  </div><!--/.container -->
+
+<!-- AWARDS SECTION -->
   <div class="container desc">
     <div class="row">
         <div class="col-lg-2 col-lg-offset-1">
@@ -135,7 +250,7 @@
  
         <!-- EDIT: awards line 1-->
         <div class="col-lg-6">
-          <p><t>All the scholarships</t><br/>
+          <p><t></t>
             Banneker Key Scholarship <br/>
             A. James Clark Engineering Scholarship <br/>
             National Merit, University of Maryland Scholarship <br/>
@@ -150,33 +265,8 @@
     <br>
   </div><!--/.container -->
 
-  <!-- Other Stuff about me SECTION -->
-  <div class="container desc">
-    <div class="row">
-        <div class="col-lg-2 col-lg-offset-1">
-          <h5>OTHER STUFF ABOUT ME</h5>
-        </div>
- 
-        <div class="col-lg-6">
-          <p><t>Organizations</t><br/>
-            <a href="http://www.rhsmith.umd.edu/programs/undergraduate-programs/academics/fellows-special-programs/quest">QUEST </a><br/>
-            <a href="http://www.umdhelpcenter.org/">Help Center (UMD Peer Counseling and Crisis Intervention Hotline)</a><br/>
-            <a href="http://www.eip.umd.edu/">EIP</a><br/>
-            <a href="http://www.hoby.org/">HOBY</a> <br/>
-            <a href="http://dg.samfundet.no/">Diversegjengen (NTNU Studentersamfundet)</a><br/>
-          </p>
-          <p><t>Where I'm writing</t><br/>
-            <a href="https://medium.com/@robcobbable">Medium</a><br/>
-            <a href="http://www.diamondbackonline.com/">Diamondback</a> </br>
-            <a href="">Blog</a>
-          </p>
-        </div>
-        <div class="col-lg-3">
-        </div>
-    
-    </div><!--/.row -->
-    <br>
-  </div><!--/.container -->
+
+
 
 <section id="contact" name="contact"></section>
   <!--FOOTER DESCRIPTION -->
@@ -200,23 +290,38 @@
           </p>
           <!-- EDIT: phone number -->
           <p><t>Phone</t><br/>
-            <a href="tel:2345678901" class="tel">301 919 3270</a> <br/>
+            <a class="tel">301 919 3270</a> <br/>
           </p>
         </div>
         <div class="col-lg-3">
           <p><sm>SOCIAL LINKS</sm></p>
           <p>
             <!-- EDIT: Social Links. Replace # with your URL for each -->
-            <a href="#"><i class="icon-dribbble"></i></a>
-            <a href="#"><i class="icon-twitter"></i></a>
-            <a href="#"><i class="icon-facebook"></i></a>
-            <a href="#"><i class="icon-linkedin"></i></a>
-            <a href="#"><i class="icon-github"></i></a>
+            <!-- a href="#"><i class="icon-dribbble"></i></a> -->
+            <a href="https://twitter.com/robcobbable"><i class="icon-twitter"></i></a>
+            <a href="https://www.facebook.com/robbb.cobbb"><i class="icon-facebook"></i></a>
+            <a href="https://www.linkedin.com/profile/view?id=107607782"><i class="icon-linkedin"></i></a>
+            <a href="https://github.com/rrcobb"><i class="icon-github"></i></a>
           </p>
         </div>
-      </div><!--/.row -->
+      </div><!--/.row --> 
     </div><!--/.container -->
   </div><!--/ #footer -->
+
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/bootstrap-autohidingnavbar.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>

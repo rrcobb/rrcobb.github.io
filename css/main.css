@@ -8,7 +8,7 @@
 
 body {
   background-color: #f2f2f2;
-  font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
+  font-family: 'Bitter', serif; /* OPTIONAL: Google Fonts - base font */
   font-weight: 300;
   font-size: 16px;
   color: #555;
@@ -37,7 +37,7 @@ p {
 
 /* Links */
 a {
-  color: #f85c37;
+  color: #687EDE;
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -72,85 +72,120 @@ a:after {
   padding: 0;
 }
 
-
-/*---------------------------------------------------
-  3.1 Topbar
----------------------------------------------------*/
-
-#section-topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10000;
-  overflow: visible;
-  font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#section-topbar a {
-  color: #fff;
-}
-
-#topbar-inner {
-  background: #111;
-  line-height: 0;
-  text-align: center;
-}
-
-/*
-  Top Bar
-
-  By default, top navigation bar uses "fixed" position
-*/
-#section-topbar ul#nav {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-
-  border-right: 1px solid #222;
-
-  /* For IE, the outcast */
-  zoom:1;
-  *display: inline;
-}
-
-#section-topbar ul#nav > li {
-  display: block;
-    float: left;
-    padding: 0;
-}
-
-
-#section-topbar ul#nav a {
-  display: block;
-  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  padding: 18px 20px 18px 20px;
-  border-left: 1px solid #222;
-}
-
-  #section-topbar ul#nav a:hover {
-    background: #222;
-    text-decoration: none;
-    border-left: 1px solid #111;
-  }
-
-  #section-topbar ul#nav .active a {
-    background: #44bbaa;
-    border-left: 1px solid #111;
-  }
-
-    #section-topbar ul#nav .active a:hover {
-      background: #44bbaa;
-    }
-
-#section-topbar i {
-  font-size: 25px;
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+  top: 45px;
+  right: -40px;
+  background-color: #446280;
 }
 /*---------------------------------------------------
   SECTION WRAPS
 ---------------------------------------------------*/
+
+/* nav wrap */
+
+.navbar-default {
+  border-color: transparent;
+  background-color: #222;
+}
+
+.navbar-top {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-default .navbar-brand {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: #d9182a;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #d9182a;
+  background-color: #d9182a;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #d9182a;
+}
+
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ddd;
+  border-radius: 0;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  outline: 0;
+  color: #d9182a;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  border-radius: 0;
+  color: #fff;
+  /*background-color: #d9182a;*/
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #fff;
+  /*background-color: #fec503;*/
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+}
+
+@media(min-width:768px) {
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .navbar-default .navbar-nav>.active>a {
+    /*border-radius: 3px;*/
+  }
+
+  .navbar-default.navbar-shrink {
+    padding: 10px 0;
+    background-color: #222;
+  }
+
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
 
 /* Header Wrap */
 .header {
@@ -198,7 +233,11 @@ a:after {
 } 
 
 .about h5, p {
-  color: white;
+  color: #ffffff;
+}
+
+.about a {
+  color: #ffffff;
 }
 
 .about i {
@@ -214,12 +253,16 @@ a:after {
   padding-bottom: 50px;
 }
 
+.footer a {
+  color: #ffffff;
+}
+
 .footer p {
-  color: white;
+  color: #ffffff;
 }
 
 .footer h5 {
-  color: white;
+  color: #ffffff;
 }
 
 

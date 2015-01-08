@@ -1,6 +1,3 @@
-A Repo For Rob Cobb
+Hi! I'm Rob Cobb.
 
-This is where my things live! 
-
-Right now, it's mostly the code for a couple tutorials. Check out the other repos for other projects I have worked on - some of them are incomplete, but that's okay!
-
+This is the code for my website and blog. Right now, it's just a resume website, but a Jekyll blog is coming shortly, just as soon as I can figure out how to serve them both from here.

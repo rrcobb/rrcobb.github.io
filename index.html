@@ -1,23 +1,327 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <!-- OPTIONAL: description -->
+    <meta name="description" content="Resume Website">
+    <!-- OPTIONAL: author -->
+    <meta name="author" content="Robert Cobb">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png" />
 
-<div class="home">
+   <title>Rob Cobb</title>
 
-  <h1 class="page-heading">Posts</h1>
+<!-- Bootstrap core CSS -->
+    <link href="resume_css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+ 
+<!-- Hover Effects for tiles-->
+    <link href="resume_css/hover-min.css" rel="stylesheet">
+    
+    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+ 
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- OPTIONAL: Fork me on Github Ribbon -->
+    <!--link rel="stylesheet" href="gh-fork-ribbon.css" -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="gh-fork-ribbon.ie.css">
+    <![endif]-->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <!-- Link the main.css stylesheet -->
+    <link href="resume_css/main.css" rel="stylesheet">
 
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+ </head>
+ <body id="page-top" class="index">
+ 
+ <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#resume">Education</a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+   <div class="header" id="headerwrap">
+     <div class="container">
+      <div class="github-fork-ribbon-wrapper right">
+              <div class="github-fork-ribbon">
+                  <a href="https://github.com/rrcobb/resume">Fork me on GitHub</a>
+              </div>
+          </div>
+
+       <div class="row centered">
+         <div class="col-lg-12">
+           <h1>Rob Cobb</h1>
+           <h3>Education/Technology/Innovation <br /> <br />
+            
+           <a class="grow-rotate" href="mailto:hello@robcobb.me">hello@robcobb.me</a>
+           </h3>
+         </div><!--/.col-lg-12-->
+       </div><!--/.row-->
+     </div><!--/.container-->
+   </div><!--/.#headerwrap-->
+ 
+ <section id="about" name="about"></section>
+ <div class="about">
+   <div class="container">
+     <div class="row"> 
+       <div class="col-lg-2 col-lg-offset-1">
+         <h5>ABOUT</h5>
+       </div>
+       <div class="col-lg-6">
+<p>Learning is best through projects. I want to change education so more kids can do their own thing.</p>
 </div>
+       <div class="col-lg-3">
+         <p><a href="https://www.dropbox.com/s/goppsz8a5eomz0x/Rob_Cobb_Resume.pdf?dl=0"><i class="icon-file"></i><sm>DOWNLOAD RESUME PDF</sm></a></p>
+       </div>
+ 
+     </div><!--/.row-->
+   </div><!--/.container-->
+ </div><!--/ #intro-->
+
+<section id="resume" name="resume"></section>
+  <!-- EDUCATION SECTION -->
+  <div class="container desc">
+    <div class="row">
+ 
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>EDUCATION</h5>
+        </div>
+        <!-- EDIT: education line 1 -->
+        <div class="col-lg-6">
+          <p><t>B.S. Entrepreneurship and Innovation in STEM Education</t><br/>
+            University of Maryland
+            <!--<br/><i>Extra info here</i>-->
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>December 2014</sm><br/>
+          </p>
+        </div>
+        
+
+        <!-- EDIT: education line 1 -->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p><t>Capstone Project</t><br/>
+            An Evaluation Tool For Computer Science Education Resources
+            <!--<br/><i>Extra info here</i>-->
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm><a href="https://www.dropbox.com/s/kyx6av85yci2e7q/An_Evaluation_Tool.pdf?dl=0"><i class="icon-file"></i><sm> Capstone Project PDF</sm></a></sm><br/>
+          </p>
+        </div>
+
+
+    </div><!--/.row -->
+    <hr>
+  </div><!--/.container -->
+  
+  <!-- WORK SECTION -->
+  <div class="container desc">
+    <div class="row">
+ 
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>EXPERIENCE</h5>
+        </div>
+        
+        <div class="col-lg-6">
+          <p class="tight"><t>Founder/Facilitator</t><br/>
+            <a href="http://makesomething.cool">Winter Term Workshop (Upcoming)</a><br/>
+          </p>
+          <p><more>Three weeks full-time helping college students work on self-started technology projects. </more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm> Jan 2015<br />
+          College Park, MD</sm></p>
+        </div>
+
+        <!-- EDIT: work line 1 -->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p class="tight"><t>Technology Director</t><br/>
+            <a href="http://www.ticcamp.com">TIC Summer Camp</a><br/>
+          </p>
+          <p><more>I had a blast helping counselors and campers learn together through technology projects. I was a counselor for a summer, tech director for three.</more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm> Summers 2011, 2012, 2013, 2014<br />
+          Washington, D.C</sm></p>
+        </div>
+        
+        <!-- EDIT: work line 2-->
+        <div class="col-lg-6 col-lg-offset-3">
+          <p class="tight"><t>Developer</t><br/>
+            <a href="http://knommon.com">Knommon.com</a><br/>
+          </p>
+          <p><more>Knommon is website for connecting people to education projects.</a></more></p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>March 2014 <br />
+          College Park, MD</sm></p>
+        </div>
+        
+    </div><!--/.row -->
+    <br>
+    <hr>
+  </div><!--/.container -->
+ 
+ 
+  
+  <!-- Other Stuff about me SECTION -->
+  <div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>OTHER STUFF</h5>
+        </div>
+ 
+        <div class="col-lg-6">
+          <p><t>Academic Programs</t><br/>
+            <a href="http://startupshell.org/">Startup Shell - Student-run Startup Incubator</a><br/>
+            <a href="http://www.rhsmith.umd.edu/programs/undergraduate-programs/academics/fellows-special-programs/quest">QUEST - Quality Enhancement Systems and Teams</a><br/>
+            <a href="http://www.eip.umd.edu/">EIP - Entrepreneurship and Innovation Program</a><br/>
+          </p>
+          
+          <p><t>Volunteer Organizations</t><br/>
+            <a href="http://www.umdhelpcenter.org/">Help Center - UMD Peer Counseling and Crisis Intervention Hotline)</a><br/>
+            <a href="http://www.hoby.org/">HOBY - Hugh O'Brien Youth Leadership</a> <br/>
+            <a href="http://dg.samfundet.no/">Diversegjengen - NTNU Studentersamfundet</a><br/>
+          </p>
+            
+          <p><t>Where I'm writing</t><br/>
+            <a href="https://medium.com/@robcobbable"><img class="grow" src="./images/medium-logo-150x1501.png" height="150" width="150" alt="Medium Logo"></a>
+            <a href="http://www.diamondbackonline.com/"><img class="grow" src="./images/dbk-logo.png" height="150" width="150" alt="Diamondback Logo"></a>
+            <a href="http://keeponlearninglearning.wordpress.com/"><img class="grow" src="./images/wordpress-logo.jpeg" height="150" width="150" alt="Medium Logo"></a>
+          </p>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    
+    </div><!--/.row -->
+    <br>
+  </div><!--/.container -->
+
+<!-- AWARDS SECTION -->
+  <div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>AWARDS</h5>
+        </div>
+ 
+        <!-- EDIT: awards line 1-->
+        <div class="col-lg-6">
+          <p><t></t>
+            Banneker Key Scholarship <br/>
+            A. James Clark Engineering Scholarship <br/>
+            National Merit, University of Maryland Scholarship <br/>
+            Maryland Distinguished Scholar <br/>
+            SI Corporation Engineering Scholarship<br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    
+    </div><!--/.row -->
+    <br>
+  </div><!--/.container -->
+
+
+
+
+<section id="contact" name="contact"></section>
+  <!--FOOTER DESCRIPTION -->
+  <div id="footwrap" class="footer">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-lg-2 col-lg-offset-1">
+          <h5>CONTACT</h5>
+        </div>
+        <!-- EDIT: email -->
+        <div class="col-lg-6">
+          <p><t>Email</t><br/>
+            <a href="mailto:hello@robcobb.me" class="mail">hello@robcobb.me</a> <br/>
+          </p>
+          <!-- EDIT: address -->
+          <p><t>Address</t><br/>
+            5000 Quebec Street <br/>
+            College Park, MD 20740 <br/>
+            United States of America<br/>
+          </p>
+          <!-- EDIT: phone number -->
+          <p><t>Phone</t><br/>
+            <a class="tel">301 919 3270</a> <br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p><sm>SOCIAL LINKS</sm></p>
+          <p>
+            <!-- EDIT: Social Links. Replace # with your URL for each -->
+            <!-- a href="#"><i class="icon-dribbble"></i></a> -->
+            <a href="https://twitter.com/robcobbable"><i class="icon-twitter"></i></a>
+            <a href="https://www.facebook.com/robbb.cobbb"><i class="icon-facebook"></i></a>
+            <a href="https://www.linkedin.com/profile/view?id=107607782"><i class="icon-linkedin"></i></a>
+            <a href="https://github.com/rrcobb"><i class="icon-github"></i></a>
+          </p>
+        </div>
+      </div><!--/.row --> 
+    </div><!--/.container -->
+  </div><!--/ #footer -->
+
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/bootstrap-autohidingnavbar.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

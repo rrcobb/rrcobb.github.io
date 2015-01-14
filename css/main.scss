@@ -27,7 +27,7 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$image-size:       50%;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -50,3 +50,8 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// restrict images to a particular size
+body img { 
+  max-width: $image-size;
+}

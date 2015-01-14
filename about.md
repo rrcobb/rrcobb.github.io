@@ -4,8 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm Rob.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I'm currently running the [Winter Term Workshop](http://makesomething.cool) at UMD's Startup Shell. 
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I graduated in December 2014 from UMD with a major I made - Entrepreneurship and Innovation in STEM Education. I'm working on making education better - more affordable, higher quality, more relevant, more student-focused. 
+
+The blog is maintained with Jekyll, and uses the base Jekyll theme. You can find out more info about Jekyll at [jekyllrb.com](http://jekyllrb.com/). 
+
+The code for this site is open-source, and I'd be flattered if you [forked me](https://github.com/rrcobb/rrcobb.github.io). 

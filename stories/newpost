@@ -1,6 +1,6 @@
 #!/bin/bash
-# Author: Katie Harron - @pibby, Modified by Robert Cobb @rrcobb
-# This bash script will setup a new Jekyll blog post for an old date and open it for editing in Sublime Text 2
+# Author: Katie Harron - @pibby
+# This bash script will setup a new Jekyll blog post in Markdown and open it for editing in Sublime Text 2
  
 echo "Post Title: "
 read title
@@ -12,12 +12,10 @@ echo "Post Keywords: "
 read keyw
 echo "Banner image (bg_ .jpg): "
 read img
-echo "Date First Published: "
-read dat
-
+ 
 ptitle=${title// /-}   # convert spaces in title to hyphens
 plc=`echo "$ptitle" | tr '[:upper:]' '[:lower:]'`   # convert title to lowercase
-pdate=`date -d $dat +%Y-%m-%d`  # create date as Year-Month-Date
+pdate=`date +%Y-%m-%d`  # create date as Year-Month-Date
 filename=~/Desktop/dev/rob/_posts/$pdate-$plc.md  # location to create the new file as year-month-day-title.md
 touch $filename   # create the new blank post
  

@@ -6,7 +6,7 @@ permalink: /about/
 
 I'm Rob.
 
-I'm currently running the [Winter Term Workshop](http://makesomething.cool) at UMD's Startup Shell. 
+I'm finished running the Winter Term Workshop at UMD's Startup Shell. It was cool. Now it's a similar thing, but 5-9 on Tuesdays, Wednesdays, and Thursdays. [Learn to Code](http://makesomething.cool). It's cool.
 
 I graduated in December 2014 from UMD with a major I made - Entrepreneurship and Innovation in STEM Education. I'm working on making education better - more affordable, higher quality, more relevant, more student-focused. 
 

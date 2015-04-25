@@ -4,7 +4,7 @@ title: Articles
 permalink: /articles/
 ---
 
-posts tagged 'article' - mostly from my stint at the Diamondback, UMD's student rag. 
+posts tagged 'article' - mostly from my time at the Diamondback, UMD's student paper. 
 
 
 <ul class="post-list">
